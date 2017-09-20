@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="u_alm_disposal_transfer_order_line" version="2" view="rpt-temp6fe8e98e4fd90700af76d0af0310c7d5awyoung">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_number</element>
+            <list_id display_value="u_alm_disposal_transfer_order_line" element="NULL" name="u_alm_disposal_transfer_order_line" parent="NULL" relationship="NULL" sys_domain="global" view="3fe8a1ce4fd90700af76d0af0310c78c">d719e1ce4fd90700af76d0af0310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:25</sys_created_on>
+            <sys_id>1f19e1ce4fd90700af76d0af0310c7c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_from_stockroom</element>
+            <list_id display_value="u_alm_disposal_transfer_order_line" element="NULL" name="u_alm_disposal_transfer_order_line" parent="NULL" relationship="NULL" sys_domain="global" view="3fe8a1ce4fd90700af76d0af0310c78c">d719e1ce4fd90700af76d0af0310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:25</sys_created_on>
+            <sys_id>9f19e1ce4fd90700af76d0af0310c7c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_stage</element>
+            <list_id display_value="u_alm_disposal_transfer_order_line" element="NULL" name="u_alm_disposal_transfer_order_line" parent="NULL" relationship="NULL" sys_domain="global" view="3fe8a1ce4fd90700af76d0af0310c78c">d719e1ce4fd90700af76d0af0310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:26</sys_created_on>
+            <sys_id>1319e1ce4fd90700af76d0af0310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_to_stockroom</element>
+            <list_id display_value="u_alm_disposal_transfer_order_line" element="NULL" name="u_alm_disposal_transfer_order_line" parent="NULL" relationship="NULL" sys_domain="global" view="3fe8a1ce4fd90700af76d0af0310c78c">d719e1ce4fd90700af76d0af0310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:26</sys_created_on>
+            <sys_id>9319e1ce4fd90700af76d0af0310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="u_alm_disposal_transfer_order_line" element="NULL" name="u_alm_disposal_transfer_order_line" parent="NULL" relationship="NULL" sys_domain="global" view="3fe8a1ce4fd90700af76d0af0310c78c">d719e1ce4fd90700af76d0af0310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:26</sys_created_on>
+            <sys_id>1719e1ce4fd90700af76d0af0310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_alm_disposal_transfer_order_line</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-20 18:19:25</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d719e1ce4fd90700af76d0af0310c7c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-20 18:19:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-temp6fe8e98e4fd90700af76d0af0310c7d5awyoung" name="rpt-temp6fe8e98e4fd90700af76d0af0310c7d5awyoung">3fe8a1ce4fd90700af76d0af0310c78c</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Validate Serial Numbers</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[//debug
+function debug(msg) {
+	var debugVal = false; //set to false to turn off debugging
+	var debugSourceSuffix = "DTO Bulk Validate";
+	if (debugVal) {
+		gs.addInfoMessage(msg);  // , debugSourceSuffix);
+	}
+}
+debug('Is this thing on?');
+
+function checkChildren(transferOrderLine, action) {
+	var totalChildren = getChildrenCount(transferOrderLine.u_disposal_transfer_order);
+	var stageChildren = getChildrenInStage(transferOrderLine.u_disposal_transfer_order, 'received');
+	var grTO = new GlideRecord('u_alm_disposal_transfer_order');
+	grTO.addQuery('sys_id', transferOrderLine.u_disposal_transfer_order.sys_id);
+	grTO.query();
+
+	if (grTO.next()) {
+		if (action == 'in_transit') {
+			if (totalChildren == stageChildren)
+				grTO.u_stage = 'fully_shipped';
+			else
+				grTO.u_stage = 'partially_shipped';
+		} else if (action == 'cancelled') {
+			if (totalChildren == stageChildren)
+				grTO.u_stage = 'cancelled';
+		} else if ((action == 'received') &&
+				   totalChildren == stageChildren) {
+			grTO.u_stage = 'pending_data_wipe';
+		}
+		grTO.update();
+	}
+}
+
+function getChildrenInStage(transferOrder, stage) {
+	var grTOL = new GlideRecord('u_alm_disposal_transfer_order_line');
+	grTOL.addQuery('u_disposal_transfer_order', transferOrder.sys_id);
+	grTOL.addQuery('u_stage', 'IN', stage);
+	grTOL.query();
+	debug('Children in stage: '+grTOL.getRowCount());
+	return grTOL.getRowCount();
+}
+
+function getChildrenCount(transferOrder) {
+	var grTOL = new GlideRecord('u_alm_disposal_transfer_order_line');
+	grTOL.addQuery('u_disposal_transfer_order', transferOrder.sys_id);
+	grTOL.query();
+	debug('Children count is: '+grTOL.getRowCount());
+	return grTOL.getRowCount();
+}
+
+// declare variables as arrays and also update the current fields before begining the script
+current.update();
+var serialNo = [], 
+	notValid = [], 
+	isValid = [];
+var allSerialNos = current.serial_numbers;
+var wrongString = "";
+var sysID = '';
+var received = [];
+
+// push the serial numbers into the current array to loop through using comma as a delimiter
+serialNo = allSerialNos.split(",");
+debug("All serial numbers are: "+serialNo);
+
+// check to see if the specific serial number is part of the CMDB table
+// using if/then
+for (i = 0; i < serialNo.length; i++) {
+	var notFound = current.not_found;
+	var notAsset = current.non_asset_items;
+	debug("Not found starting list: "+notFound);
+		if (serialNo[i] != "") {
+		var newArray = [];
+		var addtItems = '';
+		var CIGR = new GlideRecord("alm_asset");
+		CIGR.addQuery('serial_number',serialNo[i]);
+		CIGR.query();
+		while (CIGR.next()) {
+			newArray.push(CIGR.next());
+			sysID = CIGR.sys_id;
+		}
+		var rowCount = newArray.length;
+		debug("Looking up: "+serialNo[i]+" on asset table. "+rowCount+" results.");
+		
+
+		if (rowCount == 0) {
+			var CIGRItems = '';
+			// is not valid, check additional items field
+			debug('No asset records found for serial number: '+serialNo[i]);
+			var CIGRNot = new GlideRecord("u_alm_disposal_transfer_order");
+			CIGRNot.addQuery('sys_id',current.disposal_transfer_order.sys_id);
+			CIGRNot.query();
+			debug('Lookup transfer order results: '+CIGRNot.getRowCount());
+			while(CIGRNot.next()){
+				CIGRItems = CIGRNot.u_additional_items;
+			}
+			debug("Existing additional items: "+CIGRItems);
+			// add additional items to current record
+			if(CIGRItems.contains(serialNo[i])){
+				debug(serialNo[i]+" is in additional items.");
+				gs.addInfoMessage(serialNo[i]+" is in the additional items list.");
+				var notAsset2 = notAsset + serialNo[i] + ',';
+				current.non_asset_items = notAsset2;
+				current.update();
+			}
+			else{
+				debug(serialNo[i]+" is not found.");
+				gs.addErrorMessage(serialNo[i]+" is not found on the Disposal Transfer Order.");
+				var notFound2 = notFound + serialNo[i]+',';
+				current.not_found = notFound2;
+				current.update();
+			}
+		} 
+		if (rowCount > 0) {
+			var rowCount2 = '';
+			var DTOL = '';
+			// is valid, lookup existing line items
+			debug("Asset record found for: "+serialNo[i]+'. Sys ID: '+CIGR.sys_id);
+			var CIGRExisting = new GlideRecord("u_alm_disposal_transfer_order_line");
+			CIGRExisting.addQuery("u_asset",CIGR.sys_id);
+			CIGRExisting.query();
+			rowCount2 = CIGRExisting.getRowCount();
+			while(CIGRExisting.next()){
+				DTOL = CIGRExisting;
+			}
+			debug('Disposal Transfer Order Line sysID is: '+DTOL.sys_id);
+			if (rowCount2 > 0){
+				debug("Line item found for "+serialNo[i]+" was found. Updating line item.");
+				var updateTOL = new GlideRecord('u_alm_disposal_transfer_order_line');
+				updateTOL.addQuery('sys_id',DTOL.sys_id);
+				updateTOL.query();
+				updateTOL.setValue('u_stage','received');
+				updateTOL.updateMultiple();
+				debug('TOL row count for this asset: '+updateTOL.getRowCount());
+				checkChildren(DTOL,'received');
+				received.push(DTOL.u_asset.sys_id+'');
+				current.received = received.toString();
+				current.update();
+				debug('Update Disposal Line Item successful.');
+			}
+			if (rowCount2 == 0) {
+				// if no records are found, warn the user and add to the list
+				debug("No transfer order results found for "+serialNo[i]);
+				gs.addErrorMessage(serialNo[i]+" is not found on the Disposal Transfer Order.");
+				var notFound2 = notFound + serialNo[i]+',';
+				current.not_found = notFound2;
+				current.update();
+			}
+		}
+	} 
+}
+debug("Script complete.");
+// redirect the user back to the form
+current.state = "complete";
+current.update();
+//var url = "u_alm_disposal_transfer_order.do?sys_id="+current.disposal_transfer_order.sys_id;
+//action.setReturnURL(url);
+action.setRedirectURL(current);]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>awyoung</sys_created_by>
+        <sys_created_on>2017-09-18 19:22:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d86463594f99c300af76d0af0310c74b</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Validate Serial Numbers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_update_name>sys_ui_action_d86463594f99c300af76d0af0310c74b</sys_update_name>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-18 22:29:16</sys_updated_on>
+        <table>x_inthe_dto_bulk_dto_bulk_validate</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

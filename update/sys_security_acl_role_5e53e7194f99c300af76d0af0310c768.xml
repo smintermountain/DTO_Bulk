@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>awyoung</sys_created_by>
+        <sys_created_on>2017-09-18 19:18:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5e53e7194f99c300af76d0af0310c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inthe_dto_bulk_dto_bulk_validate.x_inthe_dto_bulk_dto_bulk_validate_user</sys_name>
+        <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_security_acl display_value="x_inthe_dto_bulk_dto_bulk_validate">9e53e7194f99c300af76d0af0310c766</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5e53e7194f99c300af76d0af0310c768</sys_update_name>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-18 19:18:02</sys_updated_on>
+        <sys_user_role display_value="x_inthe_dto_bulk.bulk_validate" name="x_inthe_dto_bulk.bulk_validate">ce532fd54f99c300af76d0af0310c757</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

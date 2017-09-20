@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition>current.state=="new"</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Add to Disposal</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[//debug
+function debug(msg) {
+	var debugVal = false; //set to false to turn off debugging
+	var debugSourceSuffix = "DTO Bulk Add";
+	if (debugVal) {
+		gs.addInfoMessage(msg);  // , debugSourceSuffix);
+	}
+}
+debug('Is this thing on?');
+
+// declare variables as arrays and also update the current fields before begining the script
+current.update();
+var serialNo = [], 
+	notValid = [], 
+	isValid = [];
+var allSerialNos = current.serial_numbers;
+var wrongString = "";
+var sysID = '';
+
+// push the serial numbers into the current array to loop through using comma as a delimiter
+serialNo = allSerialNos.split(",");
+debug("All serial numbers are: "+serialNo);
+
+// check to see if the specific serial number is part of the CMDB table
+// using if/then
+for (i = 0; i < serialNo.length; i++) {
+	
+	if (serialNo[i] != "") {
+		var newArray = [];
+		var addtItems = '';
+		var CIGR = new GlideRecord("alm_asset");
+		CIGR.addQuery('serial_number',serialNo[i]);
+		CIGR.query();
+		while (CIGR.next()) {
+			newArray.push(CIGR.next());
+			sysID = CIGR.sys_id;
+		}
+		var rowCount = newArray.length;
+		debug("Looking up: "+serialNo[i]+" on asset table. "+rowCount+" results.");
+		
+
+		if (rowCount == 0) {
+			var CIGRItems = '';
+			// is not valid, add to additional items field
+			debug('No records found for serial number: '+serialNo[i]);
+			var CIGRNot = new GlideRecord("u_alm_disposal_transfer_order");
+			CIGRNot.addQuery('sys_id',current.disposal_transfer_order.sys_id);
+			CIGRNot.query();
+			debug('Lookup transfer order results: '+CIGRNot.getRowCount());
+			while(CIGRNot.next()){
+				CIGRItems = CIGRNot.u_additional_items;
+			}
+			addtItems = CIGRItems +serialNo[i]+ ",";
+			debug("Existing additional items: "+CIGRItems);
+			// add additional items to current record
+			CIGRNot.u_additional_items = addtItems;
+			CIGRNot.updateMultiple();
+			debug("Updated additional items are: "+addtItems);
+		} 
+		else {
+			var rowCount2 = '';
+			// is valid, lookup existing line items for duplicates
+			debug("Asset record found for: "+serialNo[i]+'. Sys ID: '+CIGR.sys_id);
+			var CIGRExisting = new GlideRecord("u_alm_disposal_transfer_order_line");
+			CIGRExisting.addQuery("u_asset",CIGR.sys_id);
+			CIGRExisting.query();
+			rowCount2 = CIGRExisting.getRowCount();
+			debug("Lookup of existing transfer records results: "+rowCount2);
+				
+			if (rowCount2 == 0) {
+				// if no records are found, run this script to add it to the list
+				debug("No transfer order results found. Adding to list.");
+				var CIGR2 = new GlideRecord("u_alm_disposal_transfer_order_line");
+				CIGR2.active = true;
+				CIGR2.u_disposal_transfer_order = current.disposal_transfer_order;
+				CIGR2.u_asset = sysID;
+				CIGR2.update();
+			} else {
+				debug(serialNo[i]+" is already in a transfer order and was skipped.");
+				gs.addInfoMessage(serialNo[i] + "is already in a transfer order and was skipped.");
+			}
+		}
+	} 
+}
+debug("Script complete.");
+// redirect the user back to the form
+current.state = "complete";
+current.update();
+var url = "u_alm_disposal_transfer_order.do?sys_id="+current.disposal_transfer_order.sys_id;
+//action.setReturnURL(url);
+action.setRedirectURL(url);]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>trwaters</sys_created_by>
+        <sys_created_on>2017-09-16 18:17:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3f149704f998300f5f3d49f0310c760</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Add to Disposal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_update_name>sys_ui_action_a3f149704f998300f5f3d49f0310c760</sys_update_name>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-18 22:30:37</sys_updated_on>
+        <table>x_inthe_dto_bulk_dto_bulk_add</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

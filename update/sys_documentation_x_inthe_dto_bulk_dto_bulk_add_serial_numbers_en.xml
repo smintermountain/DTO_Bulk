@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="serial_numbers" label="Serial Numbers" language="en" table="x_inthe_dto_bulk_dto_bulk_add">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>serial_numbers</element>
+            <help/>
+            <hint/>
+            <label>Serial Numbers</label>
+            <language>en</language>
+            <name>x_inthe_dto_bulk_dto_bulk_add</name>
+            <plural>Serial Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>trwaters</sys_created_by>
+            <sys_created_on>2017-09-16 16:04:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>5be3a47c4f198300f5f3d49f0310c740</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Serial Numbers</sys_name>
+            <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+            <sys_update_name>sys_documentation_x_inthe_dto_bulk_dto_bulk_add_serial_numbers_en</sys_update_name>
+            <sys_updated_by>trwaters</sys_updated_by>
+            <sys_updated_on>2017-09-16 16:04:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

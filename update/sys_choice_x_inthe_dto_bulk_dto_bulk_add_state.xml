@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_inthe_dto_bulk_dto_bulk_add" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_inthe_dto_bulk_dto_bulk_add</name>
+            <sequence/>
+            <sys_created_by>trwaters</sys_created_by>
+            <sys_created_on>2017-09-16 16:08:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0b4e0344f598300f5f3d49f0310c743</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>trwaters</sys_updated_by>
+            <sys_updated_on>2017-09-16 16:08:24</sys_updated_on>
+            <u_task/>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_inthe_dto_bulk_dto_bulk_add</name>
+            <sequence/>
+            <sys_created_by>trwaters</sys_created_by>
+            <sys_created_on>2017-09-16 16:07:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e17460344f598300f5f3d49f0310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>trwaters</sys_updated_by>
+            <sys_updated_on>2017-09-16 16:07:15</sys_updated_on>
+            <u_task/>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_inthe_dto_bulk_dto_bulk_add</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>trwaters</sys_created_by>
+            <sys_created_on>2017-09-16 16:07:15</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0c84a0f04f598300f5f3d49f0310c7ea</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+            <sys_update_name>sys_choice_x_inthe_dto_bulk_dto_bulk_add_state</sys_update_name>
+            <sys_updated_by>trwaters</sys_updated_by>
+            <sys_updated_on>2017-09-16 16:08:24</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_inthe_dto_bulk.DisposalTOStageHelper</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DisposalTOStageHelper</name>
+        <script><![CDATA[var DisposalTOStageHelper = Class.create();
+DisposalTOStageHelper.prototype = {
+    initialize: function() {
+    },
+	
+	/*
+     * Helper method for transferOrder
+     */
+    getStageTO: function(stage) {
+        if (stage == 'new' || stage == 0)
+            return {sequence:0, u_stage:'new'};
+        else if (stage == 'in_transit' || stage == 1) 
+            return {sequence:1, u_stage:'in_transit'};
+        else if (stage == 'warehoused' || stage == 2)
+            return {sequence:2, u_stage:'warehoused'};
+        else if (stage == 'pending_data_wipe' || stage == 3)
+            return {sequence:3, u_stage:'pending_data_wipe'};
+		else if (stage == 'closed' || stage == 4)
+            return {sequence:4, u_stage:'closed'};
+        //else if (stage == 'cancelled' || stage == 6)
+            //return {sequence:6, u_stage:'cancelled'};
+    },
+
+    /*
+     * Helper method to get numeric stages for transferOrderLine
+     */
+    getStageTOL: function(stage) {
+        if (stage == 'new' || stage == 0)
+            return {sequence:0, u_stage:'new'};
+        else if (stage == 'in_transit' || stage == 1)
+            return {sequence:1, u_stage:'in_transit'};
+        else if (stage == 'warehoused' || stage == 2)  
+            return {sequence:2, u_stage:'warehoused'};
+        else if (stage == 'received' || stage == 3) 
+            return {sequence:3, u_stage:'received'};
+        else if (stage == 'completed' || stage == 4)
+            return {sequence:4, u_stage:'completed'};
+       // else if (stage == 'cancelled' || stage == 5)
+            //return {sequence:5, stage:'cancelled'};
+    },
+
+    type: 'DisposalTOStageHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>awyoung</sys_created_by>
+        <sys_created_on>2017-09-18 20:12:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>28bf239d4f99c300af76d0af0310c74d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DisposalTOStageHelper</sys_name>
+        <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_update_name>sys_script_include_28bf239d4f99c300af76d0af0310c74d</sys_update_name>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-18 20:12:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

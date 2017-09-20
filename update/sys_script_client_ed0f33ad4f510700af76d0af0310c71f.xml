@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>(IHC) User Instructions</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	if(g_form.getValue('state')=='new'){
+		g_form.addErrorMessage("Disposal Transfer Orders must be marked as delivered before you can use bulk validation.");
+		 g_form.showFieldMsg('serial_numbers',"Must be a comma-separated list of Serial Numbers (not device ID) with no spaces or extra characters. Example: 10xrx71,10xrx89,tgv89z1,",'info',false);
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>awyoung</sys_created_by>
+        <sys_created_on>2017-09-19 15:58:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed0f33ad4f510700af76d0af0310c71f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>(IHC) User Instructions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_update_name>sys_script_client_ed0f33ad4f510700af76d0af0310c71f</sys_update_name>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-19 15:59:42</sys_updated_on>
+        <table>x_inthe_dto_bulk_dto_bulk_validate</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

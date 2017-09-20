@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2017-09-20 20:05:55">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_3_across">f6df4af10a0a0b120070a45fa26bf4f3</layout>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>awyoung</sys_created_by>
+        <sys_created_on>2017-09-20 18:30:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6d9ba9024f1d0700af76d0af0310c749</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Disposal Transfers to SCC</sys_name>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>awyoung</sys_updated_by>
+        <sys_updated_on>2017-09-20 18:31:13</sys_updated_on>
+        <title>Disposal Transfers to SCC</title>
+        <user display_value="Will Young">9e75f0474f784600af76d0af0310c7b5</user>
+        <view/>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Assets Pending Wipe (SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                <sys_id>a00da5424f1d0700af76d0af0310c7e0</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:36:27">a00da5424f1d0700af76d0af0310c7e0</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                        <sys_id>300da5424f1d0700af76d0af0310c7e1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:36:27">a00da5424f1d0700af76d0af0310c7e0</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                        <sys_id>640da5424f1d0700af76d0af0310c7e0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                        <value>DTO - Assets Pending Wipe (SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:36:27">a00da5424f1d0700af76d0af0310c7e0</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                        <sys_id>7c0da5424f1d0700af76d0af0310c7e0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                        <value>a169e1ce4fd90700af76d0af0310c762</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:36:27">a00da5424f1d0700af76d0af0310c7e0</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                        <sys_id>b80da5424f1d0700af76d0af0310c7e0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:36:27">a00da5424f1d0700af76d0af0310c7e0</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:36:27</sys_created_on>
+                        <sys_id>f00da5424f1d0700af76d0af0310c7e1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:36:27</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>0</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Assets at SCC</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                <sys_id>b03c6d024f1d0700af76d0af0310c7c1</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:55">b03c6d024f1d0700af76d0af0310c7c1</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                        <sys_id>303c6d024f1d0700af76d0af0310c7c2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:55">b03c6d024f1d0700af76d0af0310c7c1</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                        <sys_id>743c6d024f1d0700af76d0af0310c7c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                        <value>DTO - Assets at SCC</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:55">b03c6d024f1d0700af76d0af0310c7c1</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                        <sys_id>7c3c6d024f1d0700af76d0af0310c7c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                        <value>e0aaa5024f1d0700af76d0af0310c769</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:55">b03c6d024f1d0700af76d0af0310c7c1</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                        <sys_id>b83c6d024f1d0700af76d0af0310c7c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:55">b03c6d024f1d0700af76d0af0310c7c1</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:55</sys_created_on>
+                        <sys_id>f03c6d024f1d0700af76d0af0310c7c2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:55</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Inbound Assets (SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:32:14</sys_created_on>
+                <sys_id>c30c21424f1d0700af76d0af0310c790</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:32:15</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:14">c30c21424f1d0700af76d0af0310c790</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:15</sys_created_on>
+                        <sys_id>070c21424f1d0700af76d0af0310c791</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:15</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:14">c30c21424f1d0700af76d0af0310c790</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:15</sys_created_on>
+                        <sys_id>430c21424f1d0700af76d0af0310c791</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:14">c30c21424f1d0700af76d0af0310c790</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:14</sys_created_on>
+                        <sys_id>870c21424f1d0700af76d0af0310c790</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:14</sys_updated_on>
+                        <value>DTO - Inbound Assets (SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:14">c30c21424f1d0700af76d0af0310c790</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:15</sys_created_on>
+                        <sys_id>8f0c21424f1d0700af76d0af0310c790</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:15</sys_updated_on>
+                        <value>0d0be1ce4fd90700af76d0af0310c7d3</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:32:14">c30c21424f1d0700af76d0af0310c790</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:32:15</sys_created_on>
+                        <sys_id>cb0c21424f1d0700af76d0af0310c790</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:32:15</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone3</dropzone>
+                <offset>0</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Assets Pending Wipe Chart (SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                <sys_id>c9cc65024f1d0700af76d0af0310c7c9</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:35:24">c9cc65024f1d0700af76d0af0310c7c9</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                        <sys_id>0dcc65024f1d0700af76d0af0310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:35:24">c9cc65024f1d0700af76d0af0310c7c9</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                        <sys_id>49cc65024f1d0700af76d0af0310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:35:24">c9cc65024f1d0700af76d0af0310c7c9</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                        <sys_id>85cc65024f1d0700af76d0af0310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                        <value>83ac21424f1d0700af76d0af0310c7ea</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:35:24">c9cc65024f1d0700af76d0af0310c7c9</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                        <sys_id>8dcc65024f1d0700af76d0af0310c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                        <value>DTO - Assets Pending Wipe Chart (SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:35:24">c9cc65024f1d0700af76d0af0310c7c9</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:35:24</sys_created_on>
+                        <sys_id>c1cc65024f1d0700af76d0af0310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:35:24</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>2</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - New Orders Not Shipped (SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                <sys_id>ea2d29424f1d0700af76d0af0310c7dd</sys_id>
+                <sys_mod_count>3</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:07">ea2d29424f1d0700af76d0af0310c7dd</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                        <sys_id>2e2d29424f1d0700af76d0af0310c7de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:07</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:07">ea2d29424f1d0700af76d0af0310c7dd</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                        <sys_id>6a2d29424f1d0700af76d0af0310c7de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:07</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:07">ea2d29424f1d0700af76d0af0310c7dd</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                        <sys_id>a62d29424f1d0700af76d0af0310c7de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:07</sys_updated_on>
+                        <value>5c86e18e4fd90700af76d0af0310c7c3</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:07">ea2d29424f1d0700af76d0af0310c7dd</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                        <sys_id>ae2d29424f1d0700af76d0af0310c7dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:07</sys_updated_on>
+                        <value>DTO - New Orders Not Shipped (SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:07">ea2d29424f1d0700af76d0af0310c7dd</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:07</sys_created_on>
+                        <sys_id>e22d29424f1d0700af76d0af0310c7de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:07</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>1</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Shipped Assets (to SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                <sys_id>f54d69424f1d0700af76d0af0310c78c</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:38">f54d69424f1d0700af76d0af0310c78c</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                        <sys_id>394d69424f1d0700af76d0af0310c78d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:38</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:38">f54d69424f1d0700af76d0af0310c78c</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                        <sys_id>754d69424f1d0700af76d0af0310c78d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:38</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:38">f54d69424f1d0700af76d0af0310c78c</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                        <sys_id>b14d69424f1d0700af76d0af0310c78d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:38</sys_updated_on>
+                        <value>c737618e4fd90700af76d0af0310c7c3</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:38">f54d69424f1d0700af76d0af0310c78c</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                        <sys_id>b94d69424f1d0700af76d0af0310c78c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:38</sys_updated_on>
+                        <value>DTO - Shipped Assets (to SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:37:38">f54d69424f1d0700af76d0af0310c78c</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:37:38</sys_created_on>
+                        <sys_id>fd4d69424f1d0700af76d0af0310c78c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:37:38</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>0</offset>
+                <page display_value="Disposal Transfers to SCC">6d9ba9024f1d0700af76d0af0310c749</page>
+                <summary>DTO - Orders in Warehouse (SCC)</summary>
+                <sys_created_by>awyoung</sys_created_by>
+                <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                <sys_id>fd6d69424f1d0700af76d0af0310c77d</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>awyoung</sys_updated_by>
+                <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 09-20-2017 12:38:11">fd6d69424f1d0700af76d0af0310c77d</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                        <sys_id>316d69424f1d0700af76d0af0310c77f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 09-20-2017 12:38:11">fd6d69424f1d0700af76d0af0310c77d</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                        <sys_id>7d6d69424f1d0700af76d0af0310c77e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 09-20-2017 12:38:11">fd6d69424f1d0700af76d0af0310c77d</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                        <sys_id>b16d69424f1d0700af76d0af0310c77e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                        <value>DTO - Orders in Warehouse (SCC)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 09-20-2017 12:38:11">fd6d69424f1d0700af76d0af0310c77d</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                        <sys_id>b96d69424f1d0700af76d0af0310c77e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                        <value>6fe8e98e4fd90700af76d0af0310c7d5</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 09-20-2017 12:38:11">fd6d69424f1d0700af76d0af0310c77d</portal_section>
+                        <sys_created_by>awyoung</sys_created_by>
+                        <sys_created_on>2017-09-20 18:38:11</sys_created_on>
+                        <sys_id>f56d69424f1d0700af76d0af0310c77e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>awyoung</sys_updated_by>
+                        <sys_updated_on>2017-09-20 18:38:11</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

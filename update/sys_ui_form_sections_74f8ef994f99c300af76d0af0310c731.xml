@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="74f8ef994f99c300af76d0af0310c731" sys_domain="global" table="x_inthe_dto_bulk_dto_bulk_validate" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-18 19:42:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8f8ef994f99c300af76d0af0310c731</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_inthe_dto_bulk_dto_bulk_validate" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">74f8ef994f99c300af76d0af0310c731</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">ddc82f994f99c300af76d0af0310c7dc</sys_ui_section>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-18 19:42:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-18 22:10:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72ba08ed4fd9c300af76d0af0310c7fb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_inthe_dto_bulk_dto_bulk_validate" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">74f8ef994f99c300af76d0af0310c731</sys_ui_form>
+            <sys_ui_section caption="Results" display_value="Results" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">faba08ed4fd9c300af76d0af0310c7fa</sys_ui_section>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-18 22:10:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-18 19:42:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7cf8ef994f99c300af76d0af0310c731</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_inthe_dto_bulk_dto_bulk_validate" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">74f8ef994f99c300af76d0af0310c731</sys_ui_form>
+            <sys_ui_section caption="History" display_value="History" name="x_inthe_dto_bulk_dto_bulk_validate" sys_domain="global" view="Default view">fcf8ef994f99c300af76d0af0310c730</sys_ui_section>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-18 22:10:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_inthe_dto_bulk_dto_bulk_validate</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>awyoung</sys_created_by>
+            <sys_created_on>2017-09-18 19:42:31</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74f8ef994f99c300af76d0af0310c731</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_inthe_dto_bulk_dto_bulk_validate</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
+            <sys_update_name>sys_ui_form_sections_74f8ef994f99c300af76d0af0310c731</sys_update_name>
+            <sys_updated_by>awyoung</sys_updated_by>
+            <sys_updated_on>2017-09-18 19:42:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
