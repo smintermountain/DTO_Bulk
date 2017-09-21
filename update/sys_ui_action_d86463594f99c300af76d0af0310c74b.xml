@@ -141,6 +141,7 @@ for (i = 0; i < serialNo.length; i++) {
 			debug("Asset record found for: "+serialNo[i]+'. Sys ID: '+CIGR.sys_id);
 			var CIGRExisting = new GlideRecord("u_alm_disposal_transfer_order_line");
 			CIGRExisting.addQuery("u_asset",CIGR.sys_id);
+			CIGRExisting.addQuery('u_disposal_transfer_order',current.disposal_transfer_order);
 			CIGRExisting.query();
 			rowCount2 = CIGRExisting.getRowCount();
 			while(CIGRExisting.next()){
@@ -190,7 +191,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d86463594f99c300af76d0af0310c74b</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Validate Serial Numbers</sys_name>
         <sys_overrides/>
         <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
@@ -199,7 +200,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
         <sys_update_name>sys_ui_action_d86463594f99c300af76d0af0310c74b</sys_update_name>
         <sys_updated_by>awyoung</sys_updated_by>
-        <sys_updated_on>2017-09-18 22:29:16</sys_updated_on>
+        <sys_updated_on>2017-09-21 22:51:48</sys_updated_on>
         <table>x_inthe_dto_bulk_dto_bulk_validate</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
