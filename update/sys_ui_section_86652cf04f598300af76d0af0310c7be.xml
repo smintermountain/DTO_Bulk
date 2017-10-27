@@ -4,70 +4,70 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>disposal_transfer_order</element>
             <position>0</position>
-            <sys_created_by>awyoung</sys_created_by>
-            <sys_created_on>2017-09-18 19:17:15</sys_created_on>
-            <sys_id>e62367194f99c300af76d0af0310c769</sys_id>
+            <sys_created_by>tramos12</sys_created_by>
+            <sys_created_on>2017-10-24 15:26:08</sys_created_on>
+            <sys_id>18878c4d4f8a0740af76d0af0310c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Scan Devices Into Disposal Order" display_value="Scan Devices Into Disposal Order" name="x_inthe_dto_bulk_dto_bulk_add" sys_domain="global" view="Default view">86652cf04f598300af76d0af0310c7be</sys_ui_section>
-            <sys_updated_by>awyoung</sys_updated_by>
-            <sys_updated_on>2017-09-18 19:17:15</sys_updated_on>
+            <sys_updated_by>tramos12</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:26:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>serial_numbers</element>
+            <element>device_id</element>
             <position>1</position>
-            <sys_created_by>awyoung</sys_created_by>
-            <sys_created_on>2017-09-18 19:17:15</sys_created_on>
-            <sys_id>6a2367194f99c300af76d0af0310c769</sys_id>
+            <sys_created_by>tramos12</sys_created_by>
+            <sys_created_on>2017-10-24 15:26:08</sys_created_on>
+            <sys_id>98878c4d4f8a0740af76d0af0310c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Scan Devices Into Disposal Order" display_value="Scan Devices Into Disposal Order" name="x_inthe_dto_bulk_dto_bulk_add" sys_domain="global" view="Default view">86652cf04f598300af76d0af0310c7be</sys_ui_section>
-            <sys_updated_by>awyoung</sys_updated_by>
-            <sys_updated_on>2017-09-18 19:17:15</sys_updated_on>
+            <sys_updated_by>tramos12</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:26:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>2</position>
-            <sys_created_by>awyoung</sys_created_by>
-            <sys_created_on>2017-09-18 19:17:15</sys_created_on>
-            <sys_id>ea2367194f99c300af76d0af0310c769</sys_id>
+            <sys_created_by>tramos12</sys_created_by>
+            <sys_created_on>2017-10-24 15:26:08</sys_created_on>
+            <sys_id>1c878c4d4f8a0740af76d0af0310c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Scan Devices Into Disposal Order" display_value="Scan Devices Into Disposal Order" name="x_inthe_dto_bulk_dto_bulk_add" sys_domain="global" view="Default view">86652cf04f598300af76d0af0310c7be</sys_ui_section>
-            <sys_updated_by>awyoung</sys_updated_by>
-            <sys_updated_on>2017-09-18 19:17:15</sys_updated_on>
+            <sys_updated_by>tramos12</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:26:08</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>3</position>
-            <sys_created_by>awyoung</sys_created_by>
-            <sys_created_on>2017-09-18 19:17:15</sys_created_on>
-            <sys_id>6e2367194f99c300af76d0af0310c769</sys_id>
+            <sys_created_by>tramos12</sys_created_by>
+            <sys_created_on>2017-10-24 15:26:08</sys_created_on>
+            <sys_id>9c878c4d4f8a0740af76d0af0310c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Scan Devices Into Disposal Order" display_value="Scan Devices Into Disposal Order" name="x_inthe_dto_bulk_dto_bulk_add" sys_domain="global" view="Default view">86652cf04f598300af76d0af0310c7be</sys_ui_section>
-            <sys_updated_by>awyoung</sys_updated_by>
-            <sys_updated_on>2017-09-18 19:17:15</sys_updated_on>
+            <sys_updated_by>tramos12</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:26:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
             <position>4</position>
-            <sys_created_by>awyoung</sys_created_by>
-            <sys_created_on>2017-09-18 19:17:15</sys_created_on>
-            <sys_id>ee2367194f99c300af76d0af0310c769</sys_id>
+            <sys_created_by>tramos12</sys_created_by>
+            <sys_created_on>2017-10-24 15:26:08</sys_created_on>
+            <sys_id>10878c4d4f8a0740af76d0af0310c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Scan Devices Into Disposal Order" display_value="Scan Devices Into Disposal Order" name="x_inthe_dto_bulk_dto_bulk_add" sys_domain="global" view="Default view">86652cf04f598300af76d0af0310c7be</sys_ui_section>
-            <sys_updated_by>awyoung</sys_updated_by>
-            <sys_updated_on>2017-09-18 19:17:15</sys_updated_on>
+            <sys_updated_by>tramos12</sys_updated_by>
+            <sys_updated_on>2017-10-24 15:26:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

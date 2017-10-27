@@ -16,7 +16,7 @@
 	   if(g_form.getValue('disposal_transfer_order')==''){
 		  g_form.addErrorMessage("You must have a new Disposal Transfer order to use the bulk load tool.");
 	   }
-	   g_form.showFieldMsg('serial_numbers',"Must be a comma-separated list of Serial Numbers (not device ID) with no spaces or extra characters. Example: 10xrx71,10xrx89,tgv89z1,",'info',false);
+	   g_form.showFieldMsg('device_id',"Must be a comma-separated list of Device IDs with no spaces or extra characters. Example: D10XRX71,D10XRX89,LRGV89Z1,",'info',false);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>077c3f2d4f510700af76d0af0310c70b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>(IHC) User instructions</sys_name>
         <sys_overrides/>
         <sys_package display_value="DTO Bulk Load" source="x_inthe_dto_bulk">62efdcfc4f198300f5f3d49f0310c7cd</sys_package>
@@ -34,8 +34,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="DTO Bulk Load">62efdcfc4f198300f5f3d49f0310c7cd</sys_scope>
         <sys_update_name>sys_script_client_077c3f2d4f510700af76d0af0310c70b</sys_update_name>
-        <sys_updated_by>awyoung</sys_updated_by>
-        <sys_updated_on>2017-09-19 15:57:04</sys_updated_on>
+        <sys_updated_by>tramos12</sys_updated_by>
+        <sys_updated_on>2017-10-24 15:26:02</sys_updated_on>
         <table>x_inthe_dto_bulk_dto_bulk_add</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

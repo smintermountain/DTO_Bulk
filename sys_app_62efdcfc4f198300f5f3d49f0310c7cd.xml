@@ -15,21 +15,21 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_inthe_dto_bulk</source>
-        <store_correlation_id/>
+        <store_correlation_id>REPOAPP0000041396</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>trwaters</sys_created_by>
         <sys_created_on>2017-09-16 15:47:14</sys_created_on>
         <sys_id>62efdcfc4f198300f5f3d49f0310c7cd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>trwaters</sys_updated_by>
-        <sys_updated_on>2017-09-16 15:47:14</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>tramos12</sys_updated_by>
+        <sys_updated_on>2017-10-27 19:13:35</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </sys_app>
 </record_update>
